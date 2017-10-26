@@ -1,0 +1,6 @@
+Nome:
+{{ name }}
+Email:
+{{ email }}
+Content:
+{{ form_content|safe|striptags }}

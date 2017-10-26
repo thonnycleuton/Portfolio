@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+<!--Contact -->
+<section id="contactUs" class="page-section secPad">
+   <div class="container">
+      <div class="row">
+         <div class="heading">
+            <!-- Heading -->
+            <h2>Mantenha contato</h2>
+            <p>Muito obrigado por visitar minha página. Caso queira entrar em contato comigo, me mande uma mensagem no
+                formulario abaixo e eu prometo responder o mais rápido possível.</p>
+         </div>
+      </div>
+      <div class="row mrgn30">
+         <div class="col-sm-12 col-md-8">
+            <!--NOTE: Update your email Id in "contact_me.php" file in order to receive emails from your contact form-->
+            <form name="sentMessage" id="contactForm"  novalidate role="form" action="" method="post">
+               <div class="control-group">
+                  <div class="controls">
+                     {% csrf_token %}
+                     {{ form.as_p }}
+                  </div>
+               </div>
+               <!-- For success/fail messages -->
+               <button type="submit" class="btn btn-primary pull-right">Send</button><br />
+            </form>
+         </div>
+         <div class="col-sm-4">
+            <h4>Endereço:</h4>
+            <address>
+               Umana Galeria<br>
+                R. Coelho Rodrigues, 1460 - Centro (Sul)<br>
+                Teresina - PI, 64000-080<br>
+            </address>
+            <h4>Fone:</h4>
+            <address>
+               (86) 98874-8154<br>
+            </address>
+         </div>
+      </div>
+   </div>
+   <!--/.container-->
+</section>
+{% endblock %}

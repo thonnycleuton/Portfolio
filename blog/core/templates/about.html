@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!--About-->
+<section id="aboutUs">
+   <div class="container">
+      <div class="row">
+         <!-- item -->
+         <div class="col-md-4 tileBox"> <img src="{% static 'images/perfil.jpg' %}" alt="me"/> </div>
+         <div class="col-md-8 tileBox">
+            <div class="txtHead">
+               <h2>Olá, meu nome é Thonny</h2>
+               <h3> Web Developer domiciliado em Teresina, Pi, Brasil.</h3>
+            </div>
+            <p>Nos últimos 5 anos aceitei o desafio pessoal de mudar de carreira e agarrar-me ao sonho de resolver problemas através de soluções tecnológica para os mais diversos problemas do nosso cotidiano. <br>Durante este período quando não contribuia com uma empresa em específico me dedicava a projetos como freelance, que você pode acompanhar no meu <a href="{% url 'portfolio:index' %}">portifolio</a>. Acredito que nunca se é tarde para rever conceitos e tão pouco para decidir continuar aprendendo. Acompanhe comigo abaixo um breve histórico sobre mim.</p>
+         </div>
+         <!-- end: -->
+      </div>
+   </div>
+</section>
+
+<div>
+    <div class="txtHead row">
+        <div class="col-md-6 text-center"><h2>Educação</h2></div>
+        <div class="col-md-6 text-center"><h2>Experiência</h2></div>
+    </div>
+</div>
+
+<section id="cd-timeline" class="cd-container">
+<div></div>
+   <div class="cd-timeline-block">
+      <div class="cd-timeline-img work">
+         <img src="{% static 'images/work.png' %}" alt="Picture">
+      </div>
+      <!-- cd-timeline-img -->
+      <div class="cd-timeline-content">
+         <h2>Via Personal</h2>
+         <p><strong>Programador Python Junior</strong></p>
+          <p>Set/2015 - Fev/2016</p>
+          <p> Teresina, Pi, Brasil</p>
+         <p>Análise, desenvolvimento, documentação e testes de Aplicações web em python utilizando Framework OperERP.</p>
+          <div class="tag">PEP8</div>
+          <div class="tag">XML</div>
+          <div class="tag">HTML</div>
+          <div class="tag">Python</div>
+         <span class="cd-date">2016</span>
+      </div>
+      <!-- cd-timeline-content -->
+   </div>
+<div></div>
+   <!-- cd-timeline-block -->
+   <div class="cd-timeline-block">
+      <div class="cd-timeline-img work bounce-in">
+         <img src="{% static 'images/work.png' %}" alt="Movie">
+      </div>
+      <!-- cd-timeline-img -->
+      <div class="cd-timeline-content bounce-in">
+         <h2><strong>Woo Solutions</strong></h2>
+         <p><strong>Programador Web Estagiário</strong></p>
+          <p>Jun/2015 - Jun/2016</p>
+          <p>Oshawa, On, Canadá</p>
+         <p class="description">Estágio de Verão em empresa de Desenvolvimento de sistemas para Android TV. Nesta empresa minha função era o desenvolvimento de aplicações para Android Box TV, bem como automatizar tarefas utilizando VBScript</p>
+          <div class="tag">PEP8</div>
+          <div class="tag">XML</div>
+          <div class="tag">HTML</div>
+          <div class="tag">VBScript</div>
+          <div class="tag">Java</div>
+          <div class="tag">Python</div>
+         <span class="cd-date">2015</span>
+      </div>
+      <!-- cd-timeline-content -->
+   </div>
+
+   <div class="cd-timeline-block">
+      <div class="cd-timeline-img education">
+         <img src="{% static 'images/education.png' %}" alt="Picture">
+      </div>
+      <!-- cd-timeline-img -->
+      <div class="cd-timeline-content">
+         <h2>Durham College</h2>
+          <p>Mai/2014 - Abr/2015</p>
+          <p> Oshawa, ON, Canadá</p>
+         <p><strong>Ciências da Computação</strong> Oshawa, ON, Canadá</p>
+         <p>Programa de Intercâmbio em universidade do Canada pelo Programa Ciências sem Fronteiras</p>
+         <span class="cd-date">2014</span>
+      </div>
+      <!-- cd-timeline-content -->
+   </div>
+
+   <div class="cd-timeline-block">
+      <div class="cd-timeline-img work">
+         <img src="{% static 'images/work.png' %}" alt="Picture">
+      </div>
+      <!-- cd-timeline-img -->
+      <div class="cd-timeline-content">
+         <h2>SEMEC - Secretaria Municipal de Educação</h2>
+         <p><strong>Técnico de Supore em Informática</strong> :: Tercerizado</p>
+          <p>Mar/2010 - Jan/2013</p>
+          <p> Teresina, Pi, Brasil</p>
+         <p>Atendimento de Suporte técnico em informática, sistematização e organização de relatórios de controle de veículos da Secretaria de Educação de Teresina</p>
+         <span class="cd-date">2010</span>
+      </div>
+      <!-- cd-timeline-content -->
+   </div>
+
+   <div class="cd-timeline-block">
+      <div class="cd-timeline-img education">
+         <img src="{% static 'images/education.png' %}" alt="Picture">
+      </div>
+      <!-- cd-timeline-img -->
+      <div class="cd-timeline-content">
+         <h2>Instituto Federal do Piauí</h2>
+          <p>Mar/2010 - atualmente</p>
+          <p> Teresina, Pi, Brasil</p>
+         <p><strong>Análise e Desenvolvimento de Sistemas</strong> Teresina, Pi, Brasil</p>
+         <p>Curso de Graduação em Análise e Desenvolvimento de Sistemas pelo Insistuto Federal do Piaui.</p>
+         <span class="cd-date">2010</span>
+      </div>
+      <!-- cd-timeline-content -->
+   </div>
+</section>
+{% endblock %}

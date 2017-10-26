@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!--Portfolio-->
+<section id="portfolio" class="page-section section appear clearfix secPad">
+  <div class="container">
+    <div class="heading">
+      <!-- Heading -->
+      <h2>Portfolio</h2>
+      <p>Aqui você poderá ver alguns dos meus trabalhos mais recentes. Com certeza, juntos, faremos coisas ainda mais incríveis.</p>
+    </div>
+    <div class="row">
+      <nav id="filter" class="col-md-12">
+        <ul>
+            <!-- TODO: Get this section dynamic by making a looping -->
+          <li><a href="#" class="current btn-theme btn-small" data-filter="*">Todos</a></li>
+            {% for category in categories %}
+                <li><a href="#" class="btn-theme btn-small" data-filter=".{{ category }}">{{ category }}</a></li>
+            {% endfor %}
+        </ul>
+      </nav>
+      <div class="col-md-12">
+        <div class="row">
+          <div class="portfolio-items isotopeWrapper clearfix" id="3">
+            {% for project in projects %}
+                <article class="col-sm-4 isotopeItem {{ project.type.first }}">
+                  <div class="portfolio-item"> <img src="{{ MEDIA_URL }}{{ project.image}}" alt="" />
+                    <div class="portfolio-desc align-center">
+                        <div class="folio-info"> <a
+                                href="{{ MEDIA_URL }}{{ project.image}}"
+                                title="{{ project.description }}"
+                                class="fancybox">
+                            <h5>{{ project.name }}</h5>
+                            </a>
+                        </div>
+                    </div>
+                  </div>
+                </article>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<section id="home">
+   <div class="banner-container">
+      <img src="{% static 'images/background.jpg' %}" alt="banner" />
+      <div class="container banner-content">
+         <div class="row">
+            <header class="centered">
+               <h1>Thonny Cleuton</h1>
+               <p>WEB DEVELOPER</p>
+            </header>
+            <div class="social-icons">
+               <a target='_blank' href="https://twitter.com/thonnycleuton"><i class="fa fa-twitter"></i></a>
+               <a target='_blank' href="https://www.facebook.com/thonnycleuton"><i class="fa fa-facebook"></i></a>
+               <a target='_blank' href="https://www.google.com/thonnycleuton"><i class="fa fa-google-plus"></i></a>
+               <a target='_blank' href="https://www.linkedin.com/in/thonnycleuton"><i class="fa fa-linkedin-square"></i></a>
+               <a target='_blank' href="https://www.pinterest.com/tcleuton"><i class="fa fa-pinterest"></i></a>
+            </div>
+            <a href="#" class="hireMe">Contrate</a>
+         </div>
+      </div>
+   </div>
+</section>
+{% endblock %}
