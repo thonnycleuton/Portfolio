@@ -4,4 +4,3 @@
 .idea
 db.sqlite3
 venv
-blog/settings.py
